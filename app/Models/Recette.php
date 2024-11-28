@@ -16,8 +16,10 @@ class Recette extends Model
         'sous_categorie_id', 
         'ingredients', 
         'methode_preparation', 
-        'informations_complementaire'
+        'informations_complementaire',
+        'status'
     ];
+    public $timestamps = true; // Ceci est par défaut
 
     public function categorie()
     {

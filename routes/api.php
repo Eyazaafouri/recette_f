@@ -36,6 +36,10 @@ Route::delete('deleteRecette/{id}', [RecetteController::class, 'deleteRecette'])
 Route::put('updateRecette/{id}', [RecetteController::class, 'updateRecette']);
 Route::get('getAllRecettes', [RecetteController::class, 'getAllRecettes']);
 Route::get('getRecetteById/{id}', [RecetteController::class, 'getRecetteById']);
+Route::get('recipesaccepted/{id}', [RecetteController::class, 'getAcceptedRecipes']);
+Route::get('recipesRefusée/{id}', [RecetteController::class, 'getRefuserRecipes']);
+Route::get('recipesEnCours/{id}', [RecetteController::class, 'getEnCoursRecipes']);
+Route::put('recipes/{id}/{status}', [RecetteController::class, 'updateRecipeStatus']);
 
 
 //sous categorie api
